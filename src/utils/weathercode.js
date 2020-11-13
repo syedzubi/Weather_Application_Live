@@ -11,7 +11,7 @@ const weathercode = (latitude,longitude, callback)=>{
       callback('Data Not available , Try another city', undefined)
     }else{
       callback(undefined,
-       "Current Weather is "+body.current.weather_descriptions[0]+" the temperature is "+body.current.temperature+" degrees and it feels like "+body.current.feelslike+" degrees out there. The current time is "+body.current.observation_time
+       "Current Weather is "+body.current.weather_descriptions[0]+" the temperature is "+body.current.temperature+" degrees and it feels like "+body.current.feelslike+" degrees out there. The humidity is currently at  "+body.current.humidity+"% ."
       )
       
     }
