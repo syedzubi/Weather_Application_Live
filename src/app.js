@@ -5,6 +5,8 @@ const app = express()
 const weathercode = require('./utils/weathercode')
 const geocode = require('./utils/geocode')
 
+//Heroku Port Number
+const port = process.env.PORT || 3000
 // Define path for Express config
 const publicDirPath = path.join(__dirname,'../public')
 const viewsPath = path.join(__dirname, '../templates/views')
@@ -98,6 +100,6 @@ app.get('*',(req,res)=>{
   })
 })
 //common development code we listen on 3000 
-app.listen(3000, ()=>{
-    console.log('Server started successfully on port 3000')
+app.listen(port, ()=>{
+    console.log('Server started successfully on port '+port)
 })
