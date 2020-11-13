@@ -1,12 +1,7 @@
-console.log("Client JavaScript is loaded")
-
-
 const weatherForm = document.querySelector('form')
-
 const searchElement = document.querySelector('input')
 const messageElementOne = document.querySelector('#message-1')
 const messageElementTwo = document.querySelector('#message-2')
-
 
 weatherForm.addEventListener('submit', (e)=>{
   e.preventDefault()
